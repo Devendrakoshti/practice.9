@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 40px;
+            width: 120px;
+            background-color: cadetblue;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 40px;
+            margin: 100px auto;
+            position: relative;
+            overflow: hidden;
+            z-index: 0;
+            border-radius: 15px;
+        }
+        .effect{
+            position: absolute;
+            height: 40px;
+            width: 120px;
+            /* background-color: darkblue; */
+            box-shadow: 10px 10px 30px purple inset;
+            top: 0px;
+            left:-120px ;
+            z-index: -1;
+            transition: 1s;
+
+            
+        }
+        .main:hover .effect{
+            left: 0;
+        }
+        .a{
+            height: 50px;
+            width: 100px;
+            /* border: solid; */
+            margin: 100px auto;
+            background-color: cadetblue;
+            font-size: 15px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 0;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 10px 10px 10px grey,20px 20px 10px red;
+
+
+        }
+        .b{
+            height: 50px;
+            width: 100px;
+            background-color: chartreuse;
+            /* box-shadow: inset 10px 10px 10px goldenrod; */
+            position: absolute;
+            top: 0;
+            left: -100px;
+            z-index: -1;
+            transition: 1s;
+        }
+        .a:hover .b
+        {
+            left: 0;
+        }
+        .p{
+            height: 50px;
+            width: 200px;
+            background-color: blue;
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 100px auto;
+            border-radius: 20px;
+            position: relative;
+            z-index: 0;
+            overflow: hidden;
+            box-shadow: 10px 10px 10px gray,-10px -10px 10px gray;
+            
+        }
+        .q{
+            height: 50px;
+            width: 200px;
+            background-color: lightslategray;
+            position: absolute;
+            border-radius: 20px;
+            top: 0;
+            left:-200px ;
+            z-index: -1;
+            transition: 1s;
+            
+
+        }
+        .p:hover .q{
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        hover me
+        <div class="effect"></div>
+    </div>
+    <div class="a">
+        devendra
+        <div class="b"></div>
+    </div>
+    <div class="p">
+        manish koshti
+        <div class="q"></div>
+    </div>
+
+</body>
+</html>
